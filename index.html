@@ -25,44 +25,48 @@
 </head>
 
 <body>
-  Contact Us
-  <form>
-    <div>
-      <label for="firstName">First Name</label>
-      <input type="text" id="firstName" name="firstName" required>
-    </div>
-    <div>
-      <label for="surname">Last Name</label>
-      <input type="text" id="surname" name="surname" required>
-    </div>
-    <div>
-      <label for="email">Email Address</label>
-      Please enter a valid email address
-      <input type="email" id="email" name="email" required>
-    </div>
+  <div class="modal" id="modal">
+    <div><span class="close">&times;</span></div>
+    <h4>&#10004; Message Sent!</h4>
+    <p>Thanks for completing the form. We'll be in touch soon</p>
+  </div>
 
-    <div>
-      Query Type
-      Please select a query type
+  <form id="contactForm">
+    <h1>Contact Us</h1>
+
+    <label for="firstName">First Name</label>
+    <input type="text" id="firstName" name="firstName" required class="textInput">
+
+    <label for="surname">Last Name</label>
+    <input type="text" id="surname" name="surname" required class="textInput">
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required class="textInput">
+
+    <p>Query Type</p>
+    <div class="radioChoices">
       <input type="radio" id="general" name="query" value="general">
-      <label for="general">General Enquiry</label>
-
-      <input type="radio" id="supportReq" name="query" value="supportReq">
-      <label for="supportReq">Support Request</label>
+      <label for="general" class="radioChoiceItem">General Enquiry</label>
     </div>
+
+    <div class="radioChoices">
+      <input type="radio" id="supportReq" name="query" value="supportReq">
+      <label for="supportReq" class="radioChoiceItem">Support Request</label>
+    </div>
+
+
+    <label for="message">Message</label>
+    <textarea type="text" id="message" name="message" rows="5" cols="33" required class="textInput"></textarea>
+
 
     <div>
-      <label for="message">Message</label>
-      <textarea type="text" id="message" name="message" rows="5" cols="33" required></textarea>
+      <input type="checkbox" id="consent" name="consent" value="contactConsent" required>
+      <label for="consent">I consent to being contacted by the team</label>
     </div>
-
-    <input type="checkbox" id="consent" name="consent" value="contactConsent">
-    <label for="consent">I consent to being contacted by the team</label>
-
 
     <!-- To submit this form, please consent to being contacted -->
+      <input type="submit" value="Submit" id="submit">
 
-    <input type="submit" value="Submit">
 
   </form>
   <!-- Message Sent!
