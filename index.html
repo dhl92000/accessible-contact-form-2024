@@ -8,9 +8,11 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
-  <title> Frontend Mentor | Contact form</title>
+  <title> Accessible Contact form</title>
   <link rel="stylesheet" href="style.css">
-
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
   <style>
     .attribution {
       font-size: 11px;
@@ -33,44 +35,47 @@
 
   <form id="contactForm">
     <h1>Contact Us</h1>
-
-    <label for="firstName">First Name</label>
-    <input type="text" id="firstName" name="firstName" required class="textInput">
-
-    <label for="surname">Last Name</label>
-    <input type="text" id="surname" name="surname" required class="textInput">
+    <div class="desktopRow">
+      <div class="nameEntry"> 
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" required class="textInput">
+      </div>
+      <div class="nameEntry">
+        <label for="surname">Last Name</label>
+        <input type="text" id="surname" name="surname" required class="textInput">
+      </div>
+    </div>
 
     <label for="email">Email Address</label>
     <input type="email" id="email" name="email" required class="textInput">
 
     <p>Query Type</p>
-    <div class="radioChoices">
-      <input type="radio" id="general" name="query" value="general">
-      <label for="general" class="radioChoiceItem">General Enquiry</label>
-    </div>
+    <div class="desktopRow">
+      <div class="radioChoices">
+        <input type="radio" id="general" name="query" value="general">
+        <label for="general" class="radioChoiceItem">General Enquiry</label>
+      </div>
 
-    <div class="radioChoices">
-      <input type="radio" id="supportReq" name="query" value="supportReq">
-      <label for="supportReq" class="radioChoiceItem">Support Request</label>
+      <div class="radioChoices">
+        <input type="radio" id="supportReq" name="query" value="supportReq">
+        <label for="supportReq" class="radioChoiceItem">Support Request</label>
+      </div>
     </div>
-
 
     <label for="message">Message</label>
     <textarea type="text" id="message" name="message" rows="5" cols="33" required class="textInput"></textarea>
 
-
-    <div>
+    <div id="consentDiv">
       <input type="checkbox" id="consent" name="consent" value="contactConsent" required>
       <label for="consent">I consent to being contacted by the team</label>
     </div>
 
     <!-- To submit this form, please consent to being contacted -->
+
       <input type="submit" value="Submit" id="submit">
 
 
   </form>
-  <!-- Message Sent!
-  Thanks for completing the form. We'll be in touch soon! -->
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.

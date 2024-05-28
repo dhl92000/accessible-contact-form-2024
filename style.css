@@ -1,47 +1,96 @@
-body{
+body {
     /* box-sizing: border-box; */
-    background-color: aquamarine;
+    background-color: hsl(148, 38%, 91%);
+    font-family: "Karla", sans-serif;
+    color: hsl(187, 24%, 22%);
 }
 
-.modal{
+.modal {
     display: none;
     position: fixed;
     z-index: 1;
     top: 0;
-    color: white;
+    color: hsl(0, 0%, 100%);
     background-color: green;
     padding: 10px;
     border-radius: 15px;
 }
 
-.close{
+.close {
     cursor: pointer;
 }
 
-form{
+form {
     background-color: white;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     width: 80vw;
     margin: auto;
+    margin-top: 3rem;
     padding: 1.5rem;
-    gap: 15px;
+    gap: 20px;
 }
 
-.textInput{
-    width: 80vw;
-    border: 1px solid lightseagreen;
+label {
+    font-size: 16px;
+}
+.desktopRow{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.textInput {
+
+    border: 1px solid hsl(169, 82%, 27%);
     border-radius: 10px;
     height: 3rem;
 }
-
-.radioChoices{
-    border: 1px solid lightseagreen;
+.nameEntry{
+    display: flex;
+    flex-direction: column;
+}
+.radioChoices {
+    border: 1px solid hsl(169, 82%, 27%);
     border-radius: 10px;
     padding: 10px;
+
 }
 
-.submit{
-    width: 15vw;
+#consentDiv {
+    display: flex;
+    gap: 10px;
+}
+
+#submit {
+    text-align: center;
+    height: 2.5rem;
+    background-color: hsl(169, 82%, 27%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+
+}
+
+@media (min-width: 1440px) {
+    form {
+        width: 50vw;
+    }
+
+    .desktopRow{
+
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+
+    }
+
+    .nameEntry{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+    .radioChoices{
+        flex-grow: 1;
+    }
 }
