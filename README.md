@@ -29,12 +29,7 @@ Users should be able to:
 <!-- - See hover and focus states for all interactive elements on the page -->
 
 ### Screenshot
-
-
-### Links
-
-- Solution URL: [here]
-- Live Site URL: [here]
+![image](https://github.com/dhl92000/accessible-contact-form-2024/assets/135692247/9d05e9f3-dbff-4499-831d-15e64a7185f8)
 
 ## My process
 
