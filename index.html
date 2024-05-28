@@ -36,7 +36,7 @@
   <form id="contactForm">
     <h1>Contact Us</h1>
     <div class="desktopRow">
-      <div class="nameEntry"> 
+      <div class="nameEntry">
         <label for="firstName">First Name</label>
         <input type="text" id="firstName" name="firstName" required class="textInput">
       </div>
@@ -49,18 +49,20 @@
     <label for="email">Email Address</label>
     <input type="email" id="email" name="email" required class="textInput">
 
-    <p>Query Type</p>
-    <div class="desktopRow">
-      <div class="radioChoices">
-        <input type="radio" id="general" name="query" value="general">
-        <label for="general" class="radioChoiceItem">General Enquiry</label>
-      </div>
+    <fieldset>
+      <legend>Query Type</legend>
+      <div class="desktopRow">
+        <div class="radioChoices">
+          <input type="radio" id="general" name="query" value="general">
+          <label for="general" class="radioChoiceItem">General Enquiry</label>
+        </div>
 
-      <div class="radioChoices">
-        <input type="radio" id="supportReq" name="query" value="supportReq">
-        <label for="supportReq" class="radioChoiceItem">Support Request</label>
+        <div class="radioChoices">
+          <input type="radio" id="supportReq" name="query" value="supportReq">
+          <label for="supportReq" class="radioChoiceItem">Support Request</label>
+        </div>
       </div>
-    </div>
+    </fieldset>
 
     <label for="message">Message</label>
     <textarea type="text" id="message" name="message" rows="5" cols="33" required class="textInput"></textarea>
@@ -72,7 +74,7 @@
 
     <!-- To submit this form, please consent to being contacted -->
 
-      <input type="submit" value="Submit" id="submit">
+    <input type="submit" value="Submit" id="submit">
 
 
   </form>

@@ -35,21 +35,32 @@ form {
 label {
     font-size: 16px;
 }
-.desktopRow{
+
+.desktopRow {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
+
 .textInput {
 
     border: 1px solid hsl(169, 82%, 27%);
     border-radius: 10px;
     height: 3rem;
 }
-.nameEntry{
+
+.nameEntry {
     display: flex;
     flex-direction: column;
 }
+
+fieldset{
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+    margin: none;
+}
+
 .radioChoices {
     border: 1px solid hsl(169, 82%, 27%);
     border-radius: 10px;
@@ -77,20 +88,19 @@ label {
         width: 50vw;
     }
 
-    .desktopRow{
-
+    .desktopRow {
         display: flex;
         flex-direction: row;
         gap: 15px;
-
     }
 
-    .nameEntry{
+    .nameEntry {
         display: flex;
         flex-direction: column;
         flex-grow: 1;
     }
-    .radioChoices{
+
+    .radioChoices {
         flex-grow: 1;
     }
 }
